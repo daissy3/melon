@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="리디자인, 웹페이지 제작" />
+	<meta name="Description" content="melon remake" />
+	<meta name="Author" content="k.w.k" />
+	<title>Melon</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style_tablet.css"/>
+	<link rel="stylesheet" href="css/style_phone.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" ></script>
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+	<script src="js/script.js" defer></script>
+	<script src="js/arrow.js" defer></script>
+
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+	<div class="all_contents">
+		<!-- 스킵메뉴 -->
+		<div id="skip">
+			<ul>
+				<li><a href="#chartSkip" title="차트 바로가기" >차트 바로가기</a></li>
+				<li><a href="#albumSkip" title="앨범 바로가기" >앨범 바로가기</a></li>
+				<li><a href="#trandSkip" title="트렌드 바로가기" >트렌드 바로가기</a></li>
+			</ul>
+		</div>
+		<div class="header" >
+			<h1 class="ir_so">Melon web header</h1>	
+			<div class="top_mini_menu">
+				<div class="bg"></div>
+				<ul>
+					<li><a href="#" >마이페이지</a></li>
+					<li><a href="#" >고객센터</a></li>
+					<li><a href="#" >이용권</a></li>
+					<li><a href="#" >혜택관</a></li>
+					<li><a href="#" >멜론티켓</a></li>
+				</ul>
+			</div>
+			<div class="header_main">
+				<img src="img/logo.png" alt="logo"/>
+				<div class="music_search">
+					<div class="search_box">
+						<form action="#" accept-charset="utf-8" name="melon_search" method="get">
+							<fieldset style="border:none">
+								<input type="text" placeholder=" &quot;Melon이 추천하는 트렌드&quot; " onfocus="this.placeholder=''" onblur="this.placeholder='&quot;Melon이 추천하는 트렌드&quot;'"/>
+								<!-- <button id="search_btn" type="submit" ><i class="fas fa-search"></i></button> -->
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<p><span>SEARCH TRENDS</span></p>
+					<div id="content">
+						<dl id="rank-list">
+							<dt class="ir_so">실시간 인기 음악</dt>
+							<dd>
+								<ul>
+									<li><a href="#">1. 아이유 - 라일락 ▲ 3</a></li>
+									<li><a href="#">2. 라붐 (LABOUM) - 상상더하기 ▲ 67</a></li>
+									<li><a href="#">3. 세븐틴 - 예쁘다 ▲ 17</a></li>
+									<li><a href="#">4. 오마이걸 (OH MY GIRL) - Dun Dun Dance ▼ 2</a></li>
+									<li><a href="#">5. 펀치 (Punch) - 밤이 되니까 ▲ 3</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+			</div>
+		</div>
+		<div class="body">
+			<h2 class="ir_so"> Melon web body</h2>
+			<div class="body_top" id="chartSkip">
+				<h3 class="ir_so"> Melon web main navigation</h3>
+				<div class="nav">
+					<ul>
+						<li><a href="#" >멜론차트 </a></li>
+						<li><a href="#" >최신음악</a></li>
+						<li><a href="#" >장르음악</a></li>
+						<li><a href="#" >멜론DJ</a></li>
+						<li><a href="#" >멜론TV</a></li>
+						<li><a href="#" >스타포스트</a></li>
+						<li><a href="#" >매거진</a></li>
+						<li><a href="#" >뮤직어워드</a></li>
+						<li><a href="#" >어학</a></li>
+					</ul>
+				</div>
+				<!-- 모바일(phone)버전 메뉴 -->
+				<div class="mob_nav">
+					<ul>
+						<li><a href="#">멜론차트</a></li>
+						<li><a href="#">최신음악</a></li>
+						<li><a href="#">장르음악</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">멜론DJ</a></li>
+						<li><a href="#">멜론TV</a></li>
+						<li><a href="#">스타포스트</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">매거진</a></li>
+						<li><a href="#">뮤직어워드</a></li>
+						<li><a href="#">어학</a></li>
+					</ul>
+				</div>
+				<div class="login_out">
+					<div class="login_in">
+						<input type="text"  placeholder="User Name" onfocus="this.placeholder=''" onblur="this.placeholder='User Name'">
+						<input type="text"  placeholder="Pass Word" onfocus="this.placeholder=''" onblur="this.placeholder='Pass Word'">
+					</div>
+					<h4>
+						<a href="#"><i class="fas fa-users-cog"></i></a> 
+						<a href="#"><i class="fas fa-ellipsis-h"></i></a>
+					</h4>
+					<h6>
+						<a href="#">Sign up</a>
+						<span>|</span>
+						<a href="#">Forgot Password?</a>
+					</h6>
+				</div>
+				<section>
+					<h1 class="ir_so" >배너 리스트1</h1>
+					<h4 class="ir_so">버튼</h4>
+					<div class="btn">
+						<button type="button" id="prev1"><i class="far fa-arrow-alt-circle-left"></i></button>
+						<button type="button" id="next1"><i class="far fa-arrow-alt-circle-right"></i></button>
+					</div>
+					<h4 class="ir_so">이미지</h4>
+					<ul class="slider1">
+					  <li>
+						<div style="background-image:url('img/bannerImg1.png')">
+						</div>
+					  </li>
+					  <li>
+						<div style="background-image:url('img/bannerImg2.png')">
+						</div>
+					  </li>
+					  <li>
+						<div style="background-image:url('img/bannerImg3.png')">
+						</div>
+					  </li>
+					  <li>
+						<div style="background-image:url('img/bannerImg4.png')">
+						</div>
+					  </li>
+					</ul>
+				</section>
+				<section>
+					<h1 class="ir_so" >배너 리스트2</h1>
+					<h4 class="ir_so">버튼</h4>
+					<div class="btn2">
+						<button type="button" id="prev2"><i class="far fa-arrow-alt-circle-left"></i></button>
+						<button type="button" id="next2"><i class="far fa-arrow-alt-circle-right"></i></button>
+					</div>
+					<h4 class="ir_so">이미지</h4>
+					<ul class="slider2">
+					  <li>
+						<div style="background-image:url('img/bannerImg5.png')">
+						</div>
+					  </li>
+					  <li>
+						<div style="background-image:url('img/bannerImg6.png')">
+						</div>
+					  </li>
+					  <li>
+						<div style="background-image:url('img/bannerImg7.png')">
+						</div>
+					  </li>
+					</ul>
+				</section>
+				<div class="melon_chart">
+					<h4 class="ir_so" >Melon web music chart list</h4>
+					<p><span>멜론차트></span></p>
+					<p>2021.03.17 09:기준</p>
+					<div id="content2">
+						<dl id="rank-list2">
+							<dt class="ir_so">상위 랭크 음악</dt>
+							<dd>
+								<ul class="tab-box">
+									<li class="tab-box1"><a href="#">Celebrity  <span>아이유</span></a></li>
+									<li  class="tab-box1"><a href="#">On The Ground <span>로제(ROSE)</span></a></li>
+									<li  class="tab-box1"><a href="#">롤린 (Rollin')  <span>브레이브 걸스</span></a></li>
+									<li  class="tab-box1"><a href="#">Coin <span>아이유</span></a></li>
+									<li  class="tab-box1"><a href="#">밤하늘의 별을(2020)  <span>경서</span></a></li>
+									<li  class="tab-box1"><a href="#">그냥 안아달란 말야  <span>다비치</span></a></li>
+									<li  class="tab-box1"><a href="#">오래된 노래  <span>스텐딩 에그</span></a></li>
+									<li  class="tab-box1"><a href="#">Dynamite  <span>방탄소년단</span></a></li>
+									<li  class="tab-box1"><a href="#">Gone  <span>로제(ROSE)</span></a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="body_middle" id="body_middle">
+				<h1 id="albumSkip" >NEW ALBUM</h1>
+				<p><a href="#">All</a> | <a href="#">KPOP</a> | <a href="#">POP</a></p>
+				<div class="album_list">
+					<h5 class="ir_so">Melon web album list</h5>
+					<ul>
+						<li class="tab-album"><a href="#"><img src="img/album1.jpg" alt=""/><span>UTOPIA <br> LOVO VERDI (로보베르디)</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album2.jpg" alt=""/><span>YM <br> 유민</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album3.jpg" alt=""/><span>연애의 참견 2021 OST - Part.6 <br> 세러데이 (SATURDAY)</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album4.jpg" alt=""/><span>이별은 제자리를 찾아가는 일 <br> 베이지</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album5.jpg" alt=""/><span>녘 <br> 생각의 여름</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album6.jpg" alt=""/><span>I Was Right <br> IV (아이브이)</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album7.jpg" alt=""/><span>마음이 다쳐서(2021) <br> 송하예</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album8.jpg" alt=""/><span>One's Own The Second Story <br> 김경훈</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album9.jpg" alt=""/><span>널 미워할 수 있을까 <br> 예은(YEN)</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album10.jpg" alt=""/><span>마마라치 <br> 잠비노 (Jambino)</span></a></li>
+						<li class="tab-album"><a href="#"><img src="img/album11.jpg" alt=""/><span>너에게... <br> WetBoy</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="body_bottom" id="body_bottom" >
+				<h1 id="trandSkip">HOT TRAND</h1>
+				<!-- <p>
+					<a href="#"><i class="far fa-caret-square-left"></i></a>   
+					<a href="#">1/2</a>  
+					<a href="#"><i class="far fa-caret-square-right"></i></a>
+				</p> -->
+				<div class="trand_list">
+					<ul class="sub_img_box">
+						<li><a href="#"><img src="img/trand1.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand2.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand3.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand4.png" alt=""/></a></li>
+					</ul>
+					<ul class="sub_text_box">
+						<li><a href="#">펀치 음색도 미쳤는데 가사도 미쳐.. <br/>  [MR은 거들 뿐] 안녕 내 전부였던 너<br/> <span>멜론TV 조회 240 </span></a></li>
+						<li><a href="#">가사 이거 내 얘기 맞지..? <br/> 지치고 힘들 때 듣기 좋은 띵곡 모아봄 <br/><span>멜론TV 조회 705 </span></a></li>
+						<li><a href="#">전 세계를 점령한 K-POP <br/>  현재 진행형 스토리 <br/><span>멜론TV 조회 7,025 </span></a></li>
+						<li><a href="#">이 시국이 뺏어간 캠퍼스 라이프! <br/> 그때는 일상 지금은 그리워진 대학생활<br/> <span>멜론TV 조회 1,407 </span></a></li>
+					</ul>
+					<ul class="sub_img_box">
+						<li><a href="#"><img src="img/trand5.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand6.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand7.png" alt=""/></a></li>
+						<li><a href="#"><img src="img/trand8.png" alt=""/></a></li>
+					</ul>
+					<ul class="sub_text_box">
+						<li><a href="#">더 나은 하루의 시작을 위한   <br/>  기분 좋은 플레이리스트 <br/><span>멜론TV 조회 435,921 </span></a></li>
+						<li><a href="#">봄만 되면 피어나는 꽃처럼 올라오는 <br/> #봄노래 #계절송 #감성적인 #봄날 <br/><span>멜론TV 조회 179,141  </span></a></li>
+						<li><a href="#">한 눈에 보는 3월 셋째 주 빌드 <br/>  이번 주 빌보드를 뜨겁게 달군 핫이슈<br/> <span> 멜론TV 조회 1,103</span></a></li>
+						<li><a href="#">2000년대 인기가요 띵곡 모음 <br/> #kpop #케이팝 #댄스 #추억 #2000<br/> <span>멜론TV 조회 780,153  </span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_line1">
+				<div class="footer_line2">
+					<p><a href="#">공지사항</a><a href="#">개인정보처리방침 개정 안내 2021.02.23</a></p>
+				</div>
+			</div>
+			<div class="footer_box"></div>
+			<div class="footer_text">
+				<h6 class="ir_so" >Melon web footer address </h6>
+				<ul>
+					<li><a href="#">멜론6.0둘러보기</a> </li>
+					<li><a href="#">멜론스튜디오</a></li>
+					<li><a href="#">Windows플레이어</a></li>
+					<li><a href="#">Mac플레이어</a></li>
+					<li><a href="#">iPad</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+				<ul class="ad">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">위치기반서비스 이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">청소년보호정책</a></li>
+					<li><a href="#">제휴/프로모션문의</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">파트너센터</a></li>
+				</ul>
+				<p>(주)카카오 제주특별자치도 제주시 첨단로 242(영평동) 공동대표이사:여민수,조수용 사업자등록번호:120-81-47521 통신판매업신고번호: 제 2015-제주아라-0032호 사업자정보확인> <br/>
+					문의전화: 1566-7727(평일 09:00-18:00,유료) 이메일 :melon_info@kakaocorp.com 호스팅서비스사업자(주카카오) @Kakao Corp.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="arrow-up">
+		<div class="arrow-icon ">
+			<img src="img/disc.png" width="70" height="70" alt="" class="fa-compact-disc">
+		</div>
+		<div class="play-icon">
+			<button id="stepleft"><i class="fas fa-step-backward"></i> </button>
+			<button id='pbtn'>
+				<i class="fas fa-play visible"></i>
+				<i class="fas fa-pause"></i> 
+			</button>
+			<button id="stepright"><i class="fas fa-step-forward"></i></button>
+		</div>
+		<div class="skip_btn">
+			<a href="#body_middle"><i class="fas fa-file-audio"></i></a>
+			<a href="#body_bottom"><i class="far fa-file-audio"></i></a>
+		</div>
+	</div>
+	<!-- 눈송이 -->
+	<div class="snowflakes" aria-hidden="true">
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+		<div class="snowflake">❄</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
